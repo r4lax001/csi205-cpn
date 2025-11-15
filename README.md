@@ -8,4 +8,4 @@ Currently, two official plugins are available:
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
 
-Go to webpage []()
+Go to webpage [https://r4lax001.github.io/csi205-cpn/](https://r4lax001.github.io/csi205-cpn/)
