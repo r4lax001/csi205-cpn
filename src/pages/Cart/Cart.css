@@ -1,0 +1,108 @@
+.cart-container {
+  background: linear-gradient(180deg, #f8fafc 0%, #eef2ff 100%);
+  padding: 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cart-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 1.5rem;
+}
+
+.cart-empty {
+  color: #6b7280;
+  font-size: 1.1rem;
+}
+
+/* ====== Card ====== */
+.cart-items {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.cart-card {
+  width: 14rem;
+  border: none !important;
+  border-radius: 16px !important;
+  background: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.25s ease;
+  padding-bottom: 0.5rem;
+}
+
+.cart-card:hover {
+  transform: translateY(-4px);
+}
+
+.cart-img {
+  height: 150px;
+  object-fit: cover;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.cart-text {
+  font-size: 0.9rem;
+  color: #374151;
+  margin-top: 0.5rem;
+  height: 40px;
+}
+
+.cart-price {
+  color: #0d6efd;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+
+/* ====== Delete Button ====== */
+.delete-btn {
+  background-color: #f87171 !important;
+  border: none !important;
+  border-radius: 6px !important;
+  padding: 0.4rem 0.8rem !important;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.delete-btn:hover {
+  background-color: #ef4444 !important;
+}
+
+/* ====== Summary ====== */
+.cart-summary {
+  margin-top: 1.5rem;
+  background: none;
+}
+
+.cart-summary p {
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 1rem;
+  font-size: 1.05rem; /* ← ขยายข้อความรวม */
+}
+
+/* ปรับขนาด Badge ให้ใหญ่ขึ้น */
+.cart-summary .badge {
+  font-size: 0.95rem !important; 
+  padding: 0.45rem 0.75rem !important; 
+  border-radius: 8px !important; 
+  font-weight: 600 !important;
+}
+
+.checkout-btn {
+  background-color: #facc15 !important;
+  border: none !important;
+  font-weight: 700 !important;
+  color: #111827 !important;
+  border-radius: 8px !important;
+  padding: 0.5rem 1.5rem !important;
+}
+
+.checkout-btn:hover {
+  background-color: #fddc6f !important;
+}

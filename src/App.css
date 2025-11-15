@@ -1,0 +1,106 @@
+/* ===== Theme Vars (Bootstrap aware) ===== */
+:root {
+    --brand-bg: #f8fafc;
+    --brand-card: #ffffff;
+    --brand-border: #e5e7eb;
+    --brand-text: #0f172a;
+    --brand-muted: #6b7280;
+    --brand-shadow: 0 6px 24px rgba(15, 23, 42, 0.06);
+    --radius-lg: 14px;
+
+    /* Bootstrap color tokens */
+    --bs-primary: #5b6ef5;
+    --bs-primary-rgb: 91, 110, 245;
+    --bs-success: #22c55e;
+    --bs-danger: #ef4444;
+}
+
+/* ===== Base ===== */
+html,
+body,
+#root {
+    height: 100%;
+    background: var(--brand-bg);
+    color: var(--brand-text);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.app-container {
+    width: 1020px;
+    margin: 1rem auto;
+}
+
+/* ===== Generic Cards / Sections ===== */
+.section {
+    background: var(--brand-card);
+    border: 1px solid var(--brand-border);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--brand-shadow);
+    padding: 1.25rem;
+}
+
+/* ===== Subtle links ===== */
+a,
+.link {
+    color: rgb(var(--bs-primary-rgb));
+    text-decoration: none;
+}
+
+a:hover,
+.link:hover {
+    opacity: .9;
+}
+
+/* ===== Buttons (smooth, minimal) ===== */
+.btn {
+    border-radius: 999px;
+    padding: .5rem 1rem;
+    transition: transform .06s ease, box-shadow .2s ease, background-color .2s ease, color .2s ease, border-color .2s ease;
+}
+
+.btn:active {
+    transform: translateY(1px);
+}
+
+.btn-primary {
+    box-shadow: 0 6px 20px rgba(var(--bs-primary-rgb), .25);
+    border-color: var(--bs-primary);
+}
+
+.btn-outline-primary {
+    border-color: rgba(var(--bs-primary-rgb), .35);
+    color: rgb(var(--bs-primary-rgb));
+}
+
+.btn-outline-primary:hover {
+    background: rgba(var(--bs-primary-rgb), .08);
+    border-color: var(--bs-primary);
+    color: rgb(var(--bs-primary-rgb));
+}
+
+/* Success / Danger outline minimal */
+.btn-outline-danger {
+    border-color: rgba(239, 68, 68, .35);
+    color: #ef4444;
+}
+
+.btn-outline-danger:hover {
+    background: rgba(239, 68, 68, .08);
+    border-color: #ef4444;
+    color: #ef4444;
+}
+
+/* Pills / badges */
+.badge {
+    font-weight: 600;
+    letter-spacing: .1px;
+}
+
+/* Tables (ถ้ามี) */
+.table {
+    background: var(--brand-card);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    border: 1px solid var(--brand-border);
+}
